@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgb(16, 6, 41);
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    background: rgb(28, 3, 61);
+    padding: 2rem;
+    border-radius:  0 0 0.4rem 0.4rem;
+}
+
+.header{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+span{
+    color: rgb(145, 56, 187);
+}
+
+p{
+    color:rgb(168, 168, 168) ;
+    text-align: center;text-align: center;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
+}
+
+h1{
+    color: white;text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+
+.sub-header{
+    color: rgb(168, 168, 168);
+    text-align: center;
+    padding: 0.6rem;
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+
+.container{
+    margin: 5rem 1.6rem;
+    position: relative;
+    
+}
+
+.picture{
+    background:url(images/image-header-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 15rem;
+    position: relative;
+    border-radius: 0.4rem 0.4rem 0 0 ;    
+}
+
+.overlay{
+    background:rgb(145, 56, 187) ;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+
+@media(min-width:670px){
+
+     .container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:center; 
+        margin: 10rem;    
+    }
+
+    .picture{
+            background:url(images/image-header-desktop.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            width: 20rem;
+            height: auto;
+            border-radius: 0 0.8rem 0.8rem 0;
+    
+    }
+
+    .content{
+        max-width: 630px;
+        padding: 3rem;
+        border-radius: 0.8rem 0 0 0.8rem;
+    }
+
+    .header, .sub-header{
+        text-align: left;
+    }
+
+    .tag1, .tag2, .tag3{
+        display: inline-block;
+    }
+    .tag3{
+        padding-right: 4rem;
+    }
+    .tag-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:1170px){
+    .container{
+        margin: 3rem;
+    }
+
+}
